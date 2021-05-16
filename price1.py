@@ -14,4 +14,4 @@ def discounted(price, discount, max_distcoun = 50):
     return price_with_discount
 
 
-print(discounted(100, 40))
+print(discounted(3000,30))
