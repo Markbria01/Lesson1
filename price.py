@@ -1,17 +1,22 @@
-def discounted(price,discount):
-    price = abs(float(price))
-    discount = abs(float(discount))
-    if discount > 100:
-        price_with_discount = price - price * discount / 100
-        return price_with_discount
+#Создайте функцию get_summ(one, two, delimiter='&'), которая принимает два параметра, приводит их к строке и отдает объединенными через разделитель delimiter
+#Вызовите функцию, передав в нее два аргумента "Learn" и "python", положите результат в переменную и выведите ее значение на экран
+#Сделайте так, чтобы результирующая строка выводилась заглавными буквами
 
-        
-product = {'name': 'Samsung 10S', 'stock': 8, 'price': 50000.0, 'discount': 50}
+def get_summ(one, two, delimiter='&'):
+    one = str(one)
+    two = str(two)
+    return (one + delimiter + two)
 
-product['with_discount'] = discounted(product['price'], product['discount'])
-
-print(product)
-
-discounted(100, 7)
+tonul = get_summ("Learn", "Python")
+print(tonul.upper())
 
 
+
+
+
+def format_price(price):
+    price = int(price)
+    return f" Цена: {price} руб."
+
+result = format_price(56.24)
+print(result)
